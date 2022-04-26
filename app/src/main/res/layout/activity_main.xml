@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="8sp"
+        android:text="IMC Calculadora pro"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="sua_altura_em_cm"
+        android:textColor="@android:color/holo_blue_bright"
+
+        />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:hint="ex:1_80"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@color/teal_200" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="seu_peso_em_kg"
+        android:textColor="@android:color/holo_blue_bright" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:hint="ex_88_5"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@color/teal_200" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="calcularImc"
+        android:text="calcularimc"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtresString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="15dp"
+        android:text="seu_resultado"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/txtresultnmr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_23"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="60sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imgimc2" />
+
+
+</LinearLayout>
